@@ -12,7 +12,7 @@ public:
         : Node("desired_joint_states") {
 
         trajectory = this->create_publisher<sensor_msgs::msg::JointState>(
-            "/scara/computed_torque_control", 10);
+            "/scara/desired_joint_states", 10);
 
         controlTimer_ = this->create_wall_timer(
             std::chrono::milliseconds(10), std::bind(&Desired_joint_states::controlCallback, this));
