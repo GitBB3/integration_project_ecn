@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>integ_trajectoire</name>
+  <version>0.0.0</version>
+  <description>Description du projet</description>
+
+  <maintainer email="beaujean.bertille@orange.fr">GitBB3</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  
+  
+  
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  
+  <depend>action_msgs</depend>
+  
+
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
+
