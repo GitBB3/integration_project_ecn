@@ -25,10 +25,10 @@ private:
         joint_state_msg->position.resize(3);
         joint_state_msg->velocity.resize(3);
 
-        joint_state_msg->position[0] = (M_PI / 4) * std::sin(t * 0.1);
-        joint_state_msg->position[1] = -(M_PI / 4) * std::sin(t * 0.1);
-        joint_state_msg->velocity[0] = (M_PI / 4) * 0.1 * std::cos(t * 0.1);
-        joint_state_msg->velocity[1] = -(M_PI / 4) * 0.1 * std::cos(t * 0.1);
+        joint_state_msg->position[0] = (M_PI / 4) * std::cos(t * 0.1);
+        joint_state_msg->position[1] = -(M_PI / 4) * std::cos(t * 0.1);
+        joint_state_msg->velocity[0] = -(M_PI / 4) * 0.1 * std::sin(t * 0.1);
+        joint_state_msg->velocity[1] = (M_PI / 4) * 0.1 * std::sin(t * 0.1);
 
         trajectory->publish(std::move(joint_state_msg));
     }
